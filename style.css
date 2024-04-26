@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+  /* background-color: #9c41f2; */
+  background-image: url("https://t3.ftcdn.net/jpg/02/86/18/20/360_F_286182066_yY72dajL2Vv9pYZ0LWiDiYZrMEStz0Fo.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content{
+    background-color: rgb(92, 128, 246);
+    width: 50%;
+    height: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    position: relative;
+}
+
+.para{
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: rgb(246, 242, 15);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+    animation: spin 1s ;
+}
+
+
+.image{
+    position: absolute;
+    right: -100px;
+    bottom: 0;
+}
+
+
+button{
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 900;
+    background-color: rgb(132, 250, 81);
+    border-radius: 10px;
+}
+
+#loading{
+    width: 2rem;
+    height: 2rem;
+    border:5px solid #f3f3f3;
+    border-top: 6px solid #9c41f2;
+    border-radius: 100%;
+    margin: auto;
+    display: none;
+    animation: spin 1s infinite linear;
+}
+
+#loading.display{
+    display: block;
+}
+
+
+button:hover{
+  box-shadow: 0 0 20px yellow;
+}
+
+@keyframes spin{
+ from{
+    transform: rotate(0deg);
+ }   
+ to{
+    transform: rotate(360deg);
+ } 
+}
